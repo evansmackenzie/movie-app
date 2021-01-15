@@ -1,3 +1,7 @@
-{
-  @all_actors
-}
+@all_movies.map do |movie|
+  {
+    title: movie.title,
+    year: movie.year,
+    plot: movie.plot
+  }
+end
