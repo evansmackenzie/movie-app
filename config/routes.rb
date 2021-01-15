@@ -8,5 +8,6 @@ Rails.application.routes.draw do
   # end
   namespace :api do
     get "actor_path" => "actors#single_actor_action"
+    get "all_movies_path" => "movies#all_movies_action"
   end
 end
