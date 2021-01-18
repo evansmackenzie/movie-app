@@ -9,4 +9,5 @@ class Api::MoviesController < ApplicationController
     @first_movie = Movie.first
     render "first_movie.json.jb"  
   end
+
 end
