@@ -18,6 +18,9 @@ Rails.application.routes.draw do
     post "/actors" => "actors#create"
     patch "/actors/:id" => "actors#update"
     delete "/actors/:id" => "actors#destroy"
+
+    post "/users" => "users#create"
+    post "/sessions" => "sessions#create"
     
     # get "choose_actor_path" => "actors#choose_actor_action"
     # get "choose_actor_path/:actor" => "actors#choose_actor_action"

@@ -8,6 +8,7 @@ class Api::ActorsController < ApplicationController
   #   @actor = params[:actor]
   #   render "choose_actor.json.jb"
   # end
+  before_action :authenticate_user, except: [:index, :show]
 
   def index
     @all_actors = Actor.all.order(age: :desc)
