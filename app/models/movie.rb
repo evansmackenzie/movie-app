@@ -10,11 +10,8 @@ class Movie < ApplicationRecord
   validates :year, numericality: true
 
   def genre_names
-    movies = Movie.all
-    movies.genres.each do |genre|
-      {
-        name: genre.name
-      }
-    end
+    genres.map do |genre|
+      genre.name
+    end 
   end
 end
