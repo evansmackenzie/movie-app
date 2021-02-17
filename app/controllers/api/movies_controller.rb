@@ -1,6 +1,6 @@
 class Api::MoviesController < ApplicationController
 
-  before_action :authenticate_admin, except: [:index, :show, :create]
+  # before_action :authenticate_admin, except: [:index, :show, :create]
   
   def index
     @all_movies = Movie.all
@@ -34,7 +34,7 @@ class Api::MoviesController < ApplicationController
     @movie.plot = params[:plot] ||  @movie.plot
     @movie.director = params[:director] || @movie.director
     @movie.english = params[:english] || @movie.english
-    @movie.genre = params[:genre] || @movie.genre
+    @movie.genres = params[:genres] || @movie.genres
     if @movie.save
       render "show.json.jb"
     else

@@ -5,6 +5,7 @@
     plot: movie.plot,
     director: movie.director,
     english: movie.english,
-    genres: movie.genre_names
+    genres: movie.genre_names,
+    id: movie.id
   }
 end
