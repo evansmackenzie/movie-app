@@ -7,10 +7,10 @@ Movie.create!([
   {title: "Escape from new york", year: 1981, plot: "science fiction movie", director: nil, english: nil}
 ])
 User.create!([
-  {name: "Vinny", email: "vs@gmail.com", password_digest: "$2a$12$9GKyL6RMApQqECAZikz8.uRISBInokTzm5/VffPfPILug6t5iK/zS", admin: false},
-  {name: "Mack", email: "me@gmail.com", password_digest: "$2a$12$EtQPQSx3IOT5.8SwhMIszOTcyfrN8Byy4DWZIcxNin/A3idj7igL6", admin: true},
-  {name: "helen", email: "h@gmail.com", password_digest: "$2a$12$wLPgyRb/FtTyNCthWzl6tuXCsH1mVFK7Um2emEvAUIBVEX8fOc9W.", admin: nil},
-  {name: "lucy", email: "l@gmail.com", password_digest: "$2a$12$lkKZr8mMiik16kbaj9f2duaN1prnfAzEPjaqKMb28FLbaXK0dW2zW", admin: nil}
+  {name: "Vinny", email: "vs@gmail.com", password: "password", admin: false},
+  {name: "Mack", email: "me@gmail.com", password: "password", admin: true},
+  {name: "helen", email: "h@gmail.com", password: "password", admin: nil},
+  {name: "lucy", email: "l@gmail.com", password: "password", admin: nil}
 ])
 Genre.create!([
   {name: "Fantasy"},
